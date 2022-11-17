@@ -151,7 +151,7 @@ jobs:
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/redpill-load/master/redpill-virtio/rpext-index.json
 
       - name: 添加扩展驱动[r8125]
-        if: matrix.platform != 'ds920p' && matrix.platform != 'ds918p'
+        if: matrix.platform != 'dva3221'
         run: |
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/tg3/rpext-index.json
           
